@@ -2,13 +2,14 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split, RandomizedSearchCV
+from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_validate
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 
 train = pd.read_csv('/kaggle/input/competitive-data-science-predict-future-sales/sales_train.csv')
-train['item_price'] = train['item_price'][train['item_price'].between(train['item_price'].quantile(.1), train['item_price'].quantile(.9))]
+
+#train['item_price'] = train['item_price'][train['item_price'].between(train['item_price'].quantile(.1), train['item_price'].quantile(.9))]
 
 sns.regplot(y="item_price", x="shop_id", data=train, x_estimator = np.mean)
 
