@@ -11,3 +11,9 @@ Here is some figures about some columns vs target (Item Price) in Train dataset.
 ![Shop id vs Item price](fig1.png)
 
 ![Data block num vs Item price](fig2.png)
+
+![Shop id vs Item price](fig3.png)
+
+![Data block num vs Item price](fig4.png)
+
+![Shop id vs Item price](fig5.png)
